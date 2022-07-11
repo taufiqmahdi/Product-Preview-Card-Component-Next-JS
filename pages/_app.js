@@ -17,7 +17,7 @@ const colors = {
 
 const breakpoints = {
   mobile: '0px',
-  desktop: '374px'
+  desktop: '376px'
 }
 
 const theme = extendTheme({ colors, breakpoints });
