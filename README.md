@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/product-preview-card-component-using-next-js-tHwhp4tusG)
 - Github: [Github](https://github.com/taufiqmahdi/Product-Preview-Card-Component-Next-JS)
 - Live Site URL: [Live URL Using Vercel](https://product-preview-card-component-next-js.vercel.app/)
 
