@@ -1,34 +1,94 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Mentor - Product preview card component solution
 
-## Getting Started
+This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout depending on their device's screen size
+- See hover and focus states for interactive elements
+
+### Screenshot
+
+![](./screenshot.jpeg)
+![](./screenshot2.jpeg)
+
+### Links
+
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Github: [Github](https://github.com/taufiqmahdi/Product-Preview-Card-Component-Next-JS)
+- Live Site URL: [Live URL Using Vercel](https://product-preview-card-component-next-js.vercel.app/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- Flexbox
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- [Chakra UI](https://chakra-ui.com/) - For styles
+
+### What I learned
+
+In this project, I learned using custom breakpoints, custom color using extendTheme from Chakra UI.
+
+```js
+...
+
+const colors = {
+  primary: {
+    darkCyan: "hsl(158, 36%, 37%)",
+    cream: "hsl(30, 38%, 92%)",
+  },
+  neutral: {
+    veryDarkBlue: "hsl(212, 21%, 14%)",
+    darkGrayishBlue: "hsl(228, 12%, 48%)",
+    white: "hsl(0, 0%, 100%)",
+  },
+};
+
+const breakpoints = {
+  mobile: '0px',
+  desktop: '374px'
+}
+
+const theme = extendTheme({ colors, breakpoints });
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <ChakraProvider theme={theme}>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </ChakraProvider>
+  );
+}
+
+...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Continued development
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Using breakpoints for each dimension so viewer can see better in each dimension they are currently using.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Author
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Frontend Mentor - [@taufiqmahdi](https://www.frontendmentor.io/profile/taufiqmahdi)
+- Twitter - [@taufiqmhdi](https://www.twitter.com/taufiqmhdi)
